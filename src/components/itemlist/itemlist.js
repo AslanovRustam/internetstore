@@ -1,42 +1,55 @@
+import { useSelector, useDispatch } from "react-redux";
+import { useState, useEffect } from "react";
+import { getAllItems } from "../../redux/selectors";
+// import * as operations from "../../redux/";
 import s from "./itemlist.module.css";
 import Item from "../item/item";
-import Items from "../../db.json";
+// import Items from "../../db.json";
 
 export default function ItemsList() {
-  let items = Items;
-  const quantityOfAllItems = (Items) => {
+  let items = useSelector(getAllItems);
+  const [filteredItems, setFilteredItems] = useState(items);
+  const dispatch = useDispatch();
+
+  //   useEffect(() => {
+  //     dispatch(items);
+  //   }, [items]);
+
+  //   let items = Items;
+  const quantityOfAllItems = (items) => {
     let totalQuantity = 0;
-    for (let i = 0; i < Items.length; i++) {
-      totalQuantity = totalQuantity + Items[i].quantity;
+    for (let i = 0; i < items.length; i++) {
+      totalQuantity = totalQuantity + items[i].quantity;
     }
     return totalQuantity;
   };
-  const priceOfAllItems = (Items) => {
+  const priceOfAllItems = (items) => {
     let totalPrice = 0;
-    for (let i = 0; i < Items.length; i++) {
-      totalPrice = totalPrice + Items[i].price;
+    for (let i = 0; i < items.length; i++) {
+      totalPrice = totalPrice + items[i].price;
     }
     return totalPrice.toFixed(2);
   };
-  const averagePrice = (Items) => {
+  const averagePrice = (items) => {
     let price = 0;
-    for (let i = 0; i < Items.length; i++) {
-      price = price + Items[i].price;
+    for (let i = 0; i < items.length; i++) {
+      price = price + items[i].price;
     }
-    return (price / Items.length).toFixed(3);
+    return (price / items.length).toFixed(3);
   };
   const deleteAllItems = () => {
-    console.log("до очистки", items);
+    // console.log("до очистки", items);
 
-    items = [];
-    console.log("после очистки", items);
+    setFilteredItems([]);
+    // console.log("после очистки", items);
   };
 
   const deleteItem = (id) => {
-    console.log("удалаю єлемент", id);
-    console.log("items", items);
-    const updItems = items.filter((item) => item.id !== id);
-    console.log("updItems", updItems);
+    const newItems = filteredItems.filter((item) => item.id !== id);
+    setFilteredItems(newItems);
+    // console.log("удалаю єлемент", id);
+    // console.log("items", items);
+    // return ();
   };
 
   return (
@@ -46,18 +59,18 @@ export default function ItemsList() {
           <li className={s.catalogInformation}>
             Общее кол-во товаров:{" "}
             <span className={s.calculetedData}>
-              {quantityOfAllItems(Items)}шт
+              {quantityOfAllItems(items)}шт
             </span>
           </li>
           <li className={s.catalogInformation}>
             Сумма цен всех товаров:{" "}
             <span className={s.calculetedData}>
-              {priceOfAllItems(Items)}грн
+              {priceOfAllItems(items)}грн
             </span>
           </li>
           <li className={s.catalogInformation}>
             Средняя цена:{" "}
-            <span className={s.calculetedData}>{averagePrice(Items)}грн</span>
+            <span className={s.calculetedData}>{averagePrice(items)}грн</span>
           </li>
         </ul>
         <button type="button" onClick={() => deleteAllItems()}>
@@ -66,8 +79,8 @@ export default function ItemsList() {
       </div>
       <ul className={s.itemsContainer}>
         {/* {filteredItems.map((item) => ( */}
-        {items.length > 0 ? (
-          items.map((item) => (
+        {filteredItems.length > 0 ? (
+          filteredItems.map((item) => (
             <li key={item.id} className={s.cardContainer}>
               {/* <Link to={`/laptop/${item.name}`}> */}
               <Item
