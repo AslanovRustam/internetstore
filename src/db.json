@@ -1,0 +1,459 @@
+[
+  {
+    "id": "id-1",
+    "url": "https://content2.rozetka.com.ua/goods/images/big/37871275.jpg",
+    "producer": "Acer",
+    "name": "Ноутбук Acer Aspire 5 A515-56G-54JD (NX.A1LEU.00A) Pure Silver",
+    "description": "Экран 15.6 IPS (1920x1080) Full HD, матовый / Intel Core i5-1135G7 (4.2 ГГц) / RAM 8 ГБ / SSD 512 ГБ / nVidia GeForce MX350, 2 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / без ОС / 1.9 кг / серебристый",
+    "display": [
+      { "diagonal": "15.6 (1920x1080) Full HD" },
+      { "screenType": "IPS" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Чотириядерний Intel Core i5-1135G7 (4.2 ГГц)",
+    "OS": "Без ОС",
+    "RAM": [{ "volume": "8 ГБ" }, { "type": "DDR4" }],
+    "storageCapacity": "512 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "2 ГБ" },
+      { "nameGraphCard": "NVIDIA GeForce MX350" }
+    ],
+    "corps": "Сріблястий",
+    "weight": "1.9 кг",
+    "battery": "48 Вт*год",
+    "dimensions": "363.4 x 238.5 x 17.9 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Wi-Fi 802.11 a/b/g/n/ac/ax",
+          "Bluetooth 5.0",
+          "Gigabit Ethernet"
+        ]
+      },
+      {
+        "connectors": "1 x USB 3.2 Type-C/2 x USB 3.2/1 x USB 2.0/HDMI/LAN (RJ-45)/комбінований аудіороз'єм для навушників/мікрофона"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера HD",
+      "Вбудований мікрофон",
+      "Вбудовані динаміки"
+    ],
+    "countryRegistration": "Китай (Тайвань)",
+    "guarantee": "12 місяців",
+    "price": 19999,
+    "quantity": 100
+  },
+  {
+    "id": "id-2",
+    "url": "https://content.rozetka.com.ua/goods/images/big/27122466.jpg",
+    "producer": "Asus",
+    "name": "Ноутбук Asus ROG Strix G15 G512LI-HN058 (90NR0381-M01630) Black",
+    "description": "Экран 15.6 IPS (1920x1080) Full HD 144 Гц, матовый / Intel Core i5-10300H (2.5 - 4.5 ГГц) / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650 Ti, 4 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / без ОС / 2.39 кг / черный",
+    "display": [
+      { "diagonal": "15.6 (1920x1080) Full HD" },
+      { "screenType": "IPS" },
+      { "displayFrequency": "144 Гц" }
+    ],
+    "CPU": "Чотириядерний Intel Core i5-10300H (2.5 — 4.5 ГГц)",
+    "OS": "Без ОС",
+    "RAM": [{ "volume": "16 ГБ" }, { "type": "DDR4-2933 МГц" }],
+    "storageCapacity": "512 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "4 ГБ" },
+      { "nameGraphCard": "NVIDIA GeForce GTX 1650 Ti" }
+    ],
+    "corps": "Чорний",
+    "weight": "2.39 кг",
+    "battery": "48 Вт*год",
+    "dimensions": "360 x 275 x 25.8 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Wi-Fi 802.11ax",
+          "Bluetooth 5.1",
+          "Gigabit Ethernet"
+        ]
+      },
+      {
+        "connectors": "1 x USB 3.2 Type-C Gen2 (DisplayPort)/3 x USB 3.2 Gen1/HDMI/LAN (RJ-45)/комбінований аудіороз'єм для навушників/мікрофона"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": ["Масив мікрофонів", "Стереодинаміки"],
+    "countryRegistration": "Китай (Тайвань)",
+    "guarantee": "12 місяців",
+    "price": 26999,
+    "quantity": 80
+  },
+  {
+    "id": "id-3",
+    "url": "https://content1.rozetka.com.ua/goods/images/big/144249716.jpg",
+    "producer": "Apple",
+    "name": "Ноутбук Apple MacBook Air 13 M1 256GB 2020 (MGN93) Silver",
+    "description": "Экран 13.3 Retina (2560x1600) WQXGA, глянцевый / Apple M1 / RAM 8 ГБ / SSD 256 ГБ / Apple M1 Graphics / Wi-Fi / Bluetooth / macOS Big Sur / 1.29 кг / серебристый",
+    "display": [
+      {
+        "diagonal": "13.3 (2560x1600) WQXGA"
+      },
+      { "screenType": "Retina" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Восьмиядерний Apple M1",
+    "OS": "macOS Big Sur",
+    "RAM": [{ "volume": "8 ГБ" }, { "type": "" }],
+    "storageCapacity": "256 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "" },
+      { "nameGraphCard": "Інтегрована відеокарта" }
+    ],
+    "corps": "Сріблястий",
+    "weight": "1.29 кг",
+    "battery": "49.9 Вт*год",
+    "dimensions": "304.1 x 212.4 x 16.1 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Під'єднання до мереж Wi-Fi 6 (802.11ax)",
+          "Сумісність зі стандартами IEEE 802.11a/b/g/n/ac"
+        ]
+      },
+      { "connectors": "Bluetooth" }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "HD-камера FaceTime 720p",
+      "Технологія True Tone",
+      "SSD-накопичувач PCIe",
+      "Touch ID",
+      "Стереодинаміки",
+      "Підтримка відтворення контенту у форматі Dolby Atmos"
+    ],
+    "countryRegistration": "США",
+    "guarantee": "12 місяців",
+    "price": 33999,
+    "quantity": 60
+  },
+  {
+    "id": "id-4",
+    "url": "https://content1.rozetka.com.ua/goods/images/big/89657405.jpg",
+    "producer": "Lenovo",
+    "name": "Ноутбук Lenovo V145-15 (81MT002CRA) Black",
+    "description": "Экран 15.6 (1920x1080) Full HD, матовый / AMD Dual-Core A4-9125 (2.3 - 2.6 ГГц) / RAM 4 ГБ / SSD 128 ГБ / AMD Radeon R3 Graphics / DVD+/-RW / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / 2.1 кг / черный",
+    "display": [
+      {
+        "diagonal": "15.6 (1920x1080) Full HD"
+      },
+      { "screenType": "" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Двоядерний AMD Dual-Core A4-9125 (2.3 - 2.6 ГГц)",
+    "OS": "DOS",
+    "RAM": [{ "volume": "4 ГБ" }, { "type": "" }],
+    "storageCapacity": "128 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "" },
+      { "nameGraphCard": "Інтегрована відеокарта" }
+    ],
+    "corps": "Чорний",
+    "weight": "2.1 кг",
+    "battery": "",
+    "dimensions": "375.6 x 253.6 x 22.7 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Wi-Fi 802.11ac",
+          "Bluetooth 4.1",
+          "Gigabit Ethernet"
+        ]
+      },
+      {
+        "connectors": "2 x USB 3.0/HDMI/LAN (RJ-45)/комбінований аудіороз'єм для навушників/мікрофона/кардридер"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера",
+      "Вбудований мікрофон",
+      "Вбудовані динаміки"
+    ],
+    "countryRegistration": "Китай",
+    "guarantee": "12 місяців",
+    "price": 8999,
+    "quantity": 20
+  },
+  {
+    "id": "id-5",
+    "url": "https://content1.rozetka.com.ua/goods/images/big/163130454.jpg",
+    "producer": "Asus",
+    "name": "Ноутбук Asus Laptop E410MA-EB268 (90NB0Q11-M17970) Peacock Blue",
+    "description": "Экран 14 IPS (1920x1080) Full HD, матовый / Intel Celeron N4020 (1.1 - 2.8 ГГц) / RAM 4 ГБ / SSD 256 ГБ / Intel UHD Graphics 600 / без ОД / Wi-Fi / Bluetooth / веб-камера / без ОС / 1.3 кг / черный с синим",
+    "display": [
+      {
+        "diagonal": "14 (1920x1080) Full HD"
+      },
+      { "screenType": "IPS" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Двоядерний Intel Celeron N4020 (1.1 — 2.8 ГГц)",
+    "OS": "Без ОС",
+    "RAM": [{ "volume": "4 ГБ" }, { "type": "DDR4-2400 МГц" }],
+    "storageCapacity": "256 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "" },
+      { "nameGraphCard": "Інтегрована відеокарта" }
+    ],
+    "corps": "Чорний із синім",
+    "weight": "1.3 кг",
+    "battery": "42 Вт*год",
+    "dimensions": "325 x 217 x 18.4 мм",
+    "connection": [
+      {
+        "networkAdapters": ["Wi-Fi 802.11ac", "Bluetooth 4.1"]
+      },
+      {
+        "connectors": "1 x USB 2.0/1 x USB 3.2 Gen1/1 x USB 3.2 Type-C Gen1/HDMI/комбінований аудіороз'єм для навушників/мікрофона/кардридер micro SD"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера VGA",
+      "2 Вт стереодинаміки та мікрофон",
+      "Технологія Asus SonicMaster",
+      "NumberPad"
+    ],
+    "countryRegistration": "Китай (Тайвань)",
+    "guarantee": "12 місяців",
+    "price": 9999,
+    "quantity": 10
+  },
+  {
+    "id": "id-6",
+    "url": "https://content1.rozetka.com.ua/goods/images/big/27789288.jpg",
+    "producer": "Hp",
+    "name": "Ноутбук HP Pavilion Gaming Laptop 15-ec1003ua (1U6A8EA) Dark Grey",
+    "description": "Экран 15.6 IPS (1920x1080) Full HD, матовый / AMD Ryzen 5 4600H (3.0 - 4.0 ГГц) / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1050, 3 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / FreeDOS / 1.98 кг / темно-серый",
+    "display": [
+      {
+        "diagonal": "15.6 (1920x1080) Full HD"
+      },
+      { "screenType": "IPS" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Шестиядерний AMD Ryzen 5 4600H (3.0 — 4.0 ГГц)",
+    "OS": "DOS",
+    "RAM": [{ "volume": "16 ГБ" }, { "type": "DDR4-3200 МГц" }],
+    "storageCapacity": "512 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "3 ГБ" },
+      { "nameGraphCard": "NVIDIA GeForce GTX 1050" }
+    ],
+    "corps": "Темно-сірий",
+    "weight": "1.98 кг",
+    "battery": "52.5 Вт*год",
+    "dimensions": "360 x 257 x 23.5 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Wi-Fi 802.11ac",
+          "Bluetooth 5.0",
+          "Gigabit Ethernet"
+        ],
+        "connectors": "1 x USB Type-C (5 Гбіт/сек)/1 x USB (5 Гбіт/сек)/1 x USB 2.0/HDMI/LAN (RJ-45)/комбінований аудіороз'єм для навушників/мікрофона/кардридер"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера",
+      "Вбудований мікрофон",
+      "Стереодинаміки",
+      "Акселерометр"
+    ],
+    "countryRegistration": "США",
+    "guarantee": "12 місяців",
+    "price": 23499,
+    "quantity": 50
+  },
+  {
+    "id": "id-7",
+    "url": "https://content2.rozetka.com.ua/goods/images/big/175328914.jpg",
+    "producer": "Asus",
+    "name": "Ноутбук Asus Laptop X515MA-BR150 (90NB0TH1-M04320) Slate Grey",
+    "description": "Экран 15.6 (1366x768) WXGA HD, матовый / Intel Pentium Silver N5030 (1.1 - 3.1 ГГц) / RAM 8 ГБ / SSD 256 ГБ / Intel UHD Graphics 605 / без ОД / Wi-Fi / Bluetooth / веб-камера / без ОС / 1.8 кг / серый",
+    "display": [
+      {
+        "diagonal": "15.6 (1366x768) WXGA HD"
+      },
+      { "screenType": "" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Четырехъядерный Intel Pentium Silver N5030 (1.1 - 3.1 ГГц)",
+    "OS": "Без ОС",
+    "RAM": [{ "volume": "8 ГБ" }, { "type": "DDR4" }],
+    "storageCapacity": "256 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "" },
+      { "nameGraphCard": "Інтегрована відеокарта" }
+    ],
+    "corps": "Сірий",
+    "weight": "1.8 кг",
+    "battery": "37 Вт*год",
+    "dimensions": "360.2 x 234.9 x 19.9 мм",
+    "connection": [
+      {
+        "networkAdapters": ["Wi-Fi 802.11ac", "Bluetooth 4.1"]
+      },
+      {
+        "connectors": "2 x USB 2.0/1 x USB 3.2 Gen1/1 x USB 3.2 Type-C Gen1/HDMI/комбінований аудіороз'єм для навушників/мікрофона/кардридер MicroSD"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера VGA",
+      "2 Вт стереодинаміки й аналоговий мікрофон",
+      "Технологія Asus SonicMaster"
+    ],
+    "countryRegistration": "Китай (Тайвань)",
+    "guarantee": "12 місяців",
+    "price": 12999,
+    "quantity": 30
+  },
+  {
+    "id": "id-8",
+    "url": "https://content.rozetka.com.ua/goods/images/big/83736282.jpg",
+    "producer": "Lenovo",
+    "name": "Ноутбук Lenovo IdeaPad S145-15API (81UT00NSRA) Granite Black",
+    "description": "Экран 15.6 TN (1366x768) WXGA HD, матовый / AMD 3020e (1.2 - 2.6 ГГц) / RAM 4 ГБ / SSD 128 ГБ / AMD Radeon Graphics / без ОД / Wi-Fi / Bluetooth / веб-камера / DOS / 1.85 кг / черный",
+    "display": [
+      {
+        "diagonal": "15.6 (1366x768) WXGA HD"
+      },
+      { "screenType": "TN+film" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Двоядерний AMD 3020e (1.2 — 2.6 ГГц)",
+    "OS": "DOS",
+    "RAM": [{ "volume": "4 ГБ" }, { "type": "DDR4-2400 МГц" }],
+    "storageCapacity": "128 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "Інтегрована відеокарта" },
+      { "nameGraphCard": "" }
+    ],
+    "corps": "Чорний",
+    "weight": "1.85 кг",
+    "battery": "30 Вт*год",
+    "dimensions": "362.2 x 251.5 x 19.9 мм",
+    "connection": [
+      {
+        "networkAdapters": ["Wi-Fi 802.11ac", "Bluetooth 4.2"]
+      },
+      {
+        "connectors": "2 x USB 3.1 Gen 1/1 x USB 2.0/HDMI 1.4b/комбінований аудіороз'єм для навушників/мікрофона/кардридер (4 в 1)"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера 0.3 Мп",
+      "Вбудований мікрофон",
+      "Вбудовані динаміки"
+    ],
+    "countryRegistration": "Китай",
+    "guarantee": "12 місяців",
+    "price": 9199,
+    "quantity": 100
+  },
+  {
+    "id": "id-9",
+    "url": "https://content1.rozetka.com.ua/goods/images/big/129859712.jpg",
+    "producer": "Acer",
+    "name": "Ноутбук Acer Aspire 7 A715-41G-R7MZ (NH.Q8LEU.004) Charcoal Black",
+    "description": "Экран 15.6 IPS (1920x1080) Full HD, матовый / AMD Ryzen 5 3550H (2.1 - 3.7 ГГц) / RAM 8 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650, 4 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / без ОС / 2.15 кг / черный",
+    "display": [
+      {
+        "diagonal": "15.6 (1920x1080) Full HD"
+      },
+      { "screenType": "IPS" },
+      { "displayFrequency": "60 Гц" }
+    ],
+    "CPU": "Чотириядерний AMD Ryzen 5 3550H (2.1 — 3.7 ГГц)",
+    "OS": "Без ОС",
+    "RAM": [{ "volume": "8 ГБ" }, { "type": "DDR4" }],
+    "storageCapacity": "512 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "4 ГБ" },
+      { "nameGraphCard": "NVIDIA GeForce GTX 1650" }
+    ],
+    "corps": "Чорний",
+    "weight": "2.15 кг",
+    "battery": "48 Вт*год",
+    "dimensions": "363.4 x 254.5 x 23.25 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Wi-Fi 802.11ax",
+          "Bluetooth 5.0",
+          "Gigabit Ethernet"
+        ]
+      },
+      {
+        "connectors": "1 x USB Type-C/2 x USB 3.0/1 x USB 2.0/HDMI/LAN (RJ-45)/комбінований аудіороз'єм для навушників/мікрофона"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": [
+      "Вебкамера HD",
+      "Вбудований мікрофон",
+      "Стереодинаміки",
+      "Сканер відбитків пальців (працює тільки під керуванням Windows)"
+    ],
+    "countryRegistration": "Китай (Тайвань)",
+    "guarantee": "12 місяців",
+    "price": 21999,
+    "quantity": 80
+  },
+  {
+    "id": "id-10",
+    "url": "https://content1.rozetka.com.ua/goods/images/big/27122161.jpg",
+    "producer": "Asus",
+    "name": "Ноутбук Asus ROG Strix G15 G512LI-HN094 (90NR0381-M01620) Black",
+    "description": "Экран 15.6 IPS (1920x1080) Full HD 144 Гц, матовый / Intel Core i5-10300H (2.5 - 4.5 ГГц) / RAM 8 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650 Ti, 4 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / без ОС / 2.39 кг / черный",
+    "display": [
+      {
+        "diagonal": "15.6 (1920x1080) Full HD"
+      },
+      { "screenType": "IPS" },
+      { "displayFrequency": "144 Гц" }
+    ],
+    "CPU": "Чотириядерний Intel Core i5-10300H (2.5 — 4.5 ГГц)",
+    "OS": "Без ОС",
+    "RAM": [{ "volume": "8 ГБ" }, { "type": "DDR4-2933 МГц" }],
+    "storageCapacity": "512 ГБ SSD",
+    "graphicsCard": [
+      { "volume": "4 ГБ" },
+      { "nameGraphCard": "NVIDIA GeForce GTX 1650 Ti" }
+    ],
+    "corps": "Чорний",
+    "weight": "2.39 кг",
+    "battery": "48 Вт*год",
+    "dimensions": "360 x 275 x 25.8 мм",
+    "connection": [
+      {
+        "networkAdapters": [
+          "Wi-Fi 802.11ax",
+          "Bluetooth 5.1",
+          "Gigabit Ethernet"
+        ]
+      },
+      {
+        "connectors": "1 x USB 3.2 Type-C Gen2 (DisplayPort)/3 x USB 3.2 Gen1/HDMI/LAN (RJ-45)/комбінований аудіороз'єм для навушників/мікрофона"
+      }
+    ],
+    "producingCountry": "Китай",
+    "additionalFeatures": ["Масив мікрофонів", "Стереодинаміки"],
+    "countryRegistration": "Китай (Тайвань)",
+    "guarantee": "12 місяців",
+    "price": 25499,
+    "quantity": 5
+  }
+]

@@ -1,0 +1,28 @@
+.icon {
+  font-size: 24px;
+}
+
+.itemNameCantainer {
+  margin: 10px;
+}
+.itemName {
+  /* display: block; */
+  font-weight: 700;
+  color: #4169e1;
+}
+.itemImg {
+  width: 100%;
+}
+.itemDescription {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.priceContainer {
+  color: black;
+  font-size: 24px;
+}
+.quantityContainer {
+  color: #00a046;
+  font-size: 24px;
+}
