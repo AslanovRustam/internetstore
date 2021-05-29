@@ -1,11 +1,14 @@
 .itemsContainer {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
   width: calc((100% - 6 * 10px) / 3);
-  height: auto;
+  height: 500px;
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -25,4 +28,29 @@
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+.catalogInformation {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.calculetedData {
+  font-weight: 500;
+  color: #0000ff;
+}
+.deleteButton {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  background-color: #00008b;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.deleteButton:hover,
+.deleteButton:focus {
+  background-color: #dc143c;
+}
+.itemContent {
+  flex-grow: 1;
 }

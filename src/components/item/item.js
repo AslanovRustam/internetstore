@@ -2,7 +2,7 @@ import defaultImg from "../../images/default.png";
 import s from "./item.module.css";
 export default function Item({ name, url, price, quantity, description }) {
   return (
-    <>
+    <div className={s.itemContainer}>
       <div className={s.itemNameCantainer}>
         <p className={s.itemName}>{name}</p>
       </div>
@@ -24,6 +24,6 @@ export default function Item({ name, url, price, quantity, description }) {
       <div className={s.quantityContainer}>
         <span>{quantity > 10 ? "В наличии" : "Заканчивается"}</span>
       </div>
-    </>
+    </div>
   );
 }
