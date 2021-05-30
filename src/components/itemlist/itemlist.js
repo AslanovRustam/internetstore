@@ -1,11 +1,23 @@
 import { useSelector, useDispatch } from "react-redux";
-// import { useState, useEffect } from "react";
 import { getFilteredItems, getUser } from "../../redux/selectors";
 import s from "./itemlist.module.css";
 import Item from "../item/item";
 import actions from "../../redux/actions";
+import { NavLink } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
+import DeleteIcon from "@material-ui/icons/Delete";
+import SadCat from "../../images/sadcat.jpg";
+
+const useStyles = makeStyles((theme) => ({
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
 export default function ItemsList() {
+  const classes = useStyles();
+
   let items = useSelector(getFilteredItems);
   let role = useSelector(getUser);
 
@@ -62,10 +74,29 @@ export default function ItemsList() {
           </li>
         </ul>
         {role === "админ" && (
-          <button type="button" onClick={() => deleteAllItems()}>
+          <Button
+            fullWidth
+            variant="contained"
+            color="secondary"
+            className={classes.submit}
+            startIcon={<DeleteIcon />}
+            type="button"
+            onClick={() => deleteAllItems()}
+          >
             Удалить все товары
-          </button>
+          </Button>
         )}
+        <NavLink to="/" exact>
+          <Button
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+            type="button"
+          >
+            Назад
+          </Button>
+        </NavLink>
       </div>
       <ul className={s.itemsContainer}>
         {items.length > 0 ? (
@@ -91,7 +122,10 @@ export default function ItemsList() {
             </li>
           ))
         ) : (
-          <h1>Простите, товары не найдены</h1>
+          <>
+            <img src={SadCat} width="100%vw" alt="нет товаров"></img>
+            <h1>Простите, товары не найдены</h1>
+          </>
         )}
       </ul>
     </div>

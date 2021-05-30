@@ -1,4 +1,4 @@
-import defaultImg from "../../images/default.png";
+import defaultImg from "../../images/default.jpg";
 import s from "./item.module.css";
 
 export default function Item({ name, url, price, quantity, description }) {

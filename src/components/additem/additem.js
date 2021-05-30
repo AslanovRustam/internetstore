@@ -1,25 +1,36 @@
-import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getUser } from "../../redux/selectors";
 import shortid from "shortid";
 import actions from "../../redux/actions";
+import Button from "@material-ui/core/Button";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import TextField from "@material-ui/core/TextField";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import Denied from "../../images/denied.png";
+import s from "./additem.module.css";
+
+const useStyles = makeStyles((theme) => ({
+  form: {
+    width: "100%", // Fix IE 11 issue.
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
 export default function AddItem() {
+  const classes = useStyles();
   let user = useSelector(getUser);
 
   const [itemName, setItemName] = useState("");
   const [itemDescription, setItemDescription] = useState("");
   const [itemPrice, setItemPrice] = useState("");
-  // const [newItems, setNewItems] = useState([]);
-  // let items = useSelector(getFilteredItems);
-  // let newItems = [];
 
   const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   newItems.push(itemName);
-  //   window.localStorage.setItem("newItem", JSON.stringify(newItems));
-  // }, [newItems]);
 
   const addItem = (item) => {
     dispatch(actions.addItemSuccess(item));
@@ -53,53 +64,95 @@ export default function AddItem() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      {user === "админ" ? (
-        <>
-          <label>
-            <input
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <form onSubmit={handleSubmit} className={classes.form} noValidate>
+        {user === "админ" ? (
+          <>
+            <TextField
+              variant="outlined"
+              margin="normal"
+              fullWidth
+              id="itemName"
+              label="название товара"
+              name="itemName"
+              autoFocus
               type="text"
-              placeholder="название товара"
               value={itemName}
               onChange={handleItemNameChange}
-            ></input>
-          </label>
-          <label>
-            <input
+            />
+
+            <TextField
+              variant="outlined"
+              margin="normal"
+              fullWidth
+              id="itemDescription"
+              label="описание товара"
+              name="itemDescription"
               type="text"
-              placeholder="описание товара"
               value={itemDescription}
               onChange={handleItemDescriptionChange}
-            ></input>
-          </label>
-          <label>
-            <input
+            />
+
+            <TextField
+              variant="outlined"
+              margin="normal"
+              fullWidth
+              id="itemPrice"
+              label="цена"
+              name="itemPrice"
               type="number"
-              placeholder="цена"
               value={itemPrice}
               onChange={handlesetItemPriceChange}
-            ></input>
-          </label>
-          <button
-            type="submit"
-            onClick={() =>
-              addItem({
-                id: shortid.generate(),
-                name: itemName,
-                description: itemDescription,
-                price: Number(itemPrice),
-                quantity: 1,
-                description:
-                  "Экран 15.6 (1920x1080) Full HD, матовый / AMD Dual-Core A4-9125 (2.3 - 2.6 ГГц) / RAM 4 ГБ / SSD 128 ГБ / AMD Radeon R3 Graphics / DVD+/-RW / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / 2.1 кг / черный",
-              })
-            }
-          >
-            Добавить товар
-          </button>
-        </>
-      ) : (
-        <h1>У вас недостаточно прав доступа для добавления товаров</h1>
-      )}
-    </form>
+            />
+            <Button
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+              type="submit"
+              onClick={() =>
+                addItem({
+                  id: shortid.generate(),
+                  name: itemName,
+                  description: itemDescription,
+                  price: Number(itemPrice),
+                  quantity: 1,
+                })
+              }
+            >
+              Добавить товар
+            </Button>
+            <NavLink to="/" exact>
+              <Button
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={classes.submit}
+                type="button"
+              >
+                Назад
+              </Button>
+            </NavLink>
+          </>
+        ) : (
+          <div className={s.denied}>
+            <img src={Denied} alt="stop"></img>
+            <h1>У вас недостаточно прав доступа для добавления товаров</h1>
+            <NavLink to="/" exact>
+              <Button
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={classes.submit}
+                type="button"
+              >
+                Назад
+              </Button>
+            </NavLink>
+          </div>
+        )}
+      </form>
+    </Container>
   );
 }

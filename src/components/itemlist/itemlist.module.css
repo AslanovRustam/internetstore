@@ -54,3 +54,8 @@
 .itemContent {
   flex-grow: 1;
 }
+.noItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
