@@ -1,14 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
 // import { useState, useEffect } from "react";
-import { getFilteredItems } from "../../redux/selectors";
+import { getFilteredItems, getUser } from "../../redux/selectors";
 import s from "./itemlist.module.css";
 import Item from "../item/item";
 import actions from "../../redux/actions";
 
 export default function ItemsList() {
   let items = useSelector(getFilteredItems);
-  //   const [filteredItems, setFilteredItems] = useState(items);
-  //   ////////////////////
+  let role = useSelector(getUser);
+
   const dispatch = useDispatch();
 
   const quantityOfAllItems = (items) => {
@@ -34,14 +34,9 @@ export default function ItemsList() {
   };
   const deleteAllItems = () => {
     dispatch(actions.deleteAllItemSuccess());
-
-    // setFilteredItems([]);
-    // console.log("после очистки", items);
   };
 
   const deleteItem = (id) => {
-    // const newItems = filteredItems.filter((item) => item.id !== id);
-    // setFilteredItems(newItems);
     dispatch(actions.deleteItemSuccess(id));
   };
 
@@ -66,20 +61,16 @@ export default function ItemsList() {
             <span className={s.calculetedData}>{averagePrice(items)}грн</span>
           </li>
         </ul>
-        <button type="button" onClick={() => deleteAllItems()}>
-          {/* <button
-          type="button"
-          onClick={() => dispatch(actions.deleteAllItemSuccess())}
-        > */}
-          Удалить все товары
-        </button>
+        {role === "админ" && (
+          <button type="button" onClick={() => deleteAllItems()}>
+            Удалить все товары
+          </button>
+        )}
       </div>
       <ul className={s.itemsContainer}>
-        {/* {filteredItems.map((item) => ( */}
         {items.length > 0 ? (
           items.map((item) => (
             <li key={item.id} className={s.cardContainer}>
-              {/* <Link to={`/laptop/${item.name}`}> */}
               <Item
                 className={s.itemContent}
                 name={item.name}
@@ -88,15 +79,15 @@ export default function ItemsList() {
                 quantity={item.quantity}
                 description={item.description}
               />
-              <button
-                className={s.deleteButton}
-                type="button"
-                onClick={() => deleteItem(item.id)}
-                // onClick={() => dispatch(actions.deleteItemSuccess(item.id))}
-              >
-                Удалить
-              </button>
-              {/* </Link> */}
+              {role === "админ" && (
+                <button
+                  className={s.deleteButton}
+                  type="button"
+                  onClick={() => deleteItem(item.id)}
+                >
+                  Удалить
+                </button>
+              )}
             </li>
           ))
         ) : (

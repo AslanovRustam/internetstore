@@ -1,20 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { getUser } from "../../redux/selectors";
 import shortid from "shortid";
 import actions from "../../redux/actions";
 
 export default function AddItem() {
+  let user = useSelector(getUser);
+
   const [itemName, setItemName] = useState("");
   const [itemDescription, setItemDescription] = useState("");
-  const [itemPrice, setItemPrice] = useState(0);
+  const [itemPrice, setItemPrice] = useState("");
+  // const [newItems, setNewItems] = useState([]);
+  // let items = useSelector(getFilteredItems);
+  // let newItems = [];
 
   const dispatch = useDispatch();
 
+  // useEffect(() => {
+  //   newItems.push(itemName);
+  //   window.localStorage.setItem("newItem", JSON.stringify(newItems));
+  // }, [newItems]);
+
   const addItem = (item) => {
     dispatch(actions.addItemSuccess(item));
-
-    // setFilteredItems([]);
-    // console.log("после очистки", items);
   };
 
   const handleItemNameChange = (e) => {
@@ -29,6 +37,7 @@ export default function AddItem() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     console.log(
       `itemName: ${itemName},`,
       `itemDescription: ${itemDescription},`,
@@ -42,42 +51,55 @@ export default function AddItem() {
     setItemDescription("");
     setItemPrice("");
   };
+
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        <input
-          placeholder="название товара"
-          value={itemName}
-          onChange={handleItemNameChange}
-        ></input>
-      </label>
-      <label>
-        <input
-          placeholder="описание товара"
-          value={itemDescription}
-          onChange={handleItemDescriptionChange}
-        ></input>
-      </label>
-      <label>
-        <input
-          placeholder="цена"
-          value={itemPrice}
-          onChange={handlesetItemPriceChange}
-        ></input>
-      </label>
-      <button
-        type="submit"
-        onClick={() =>
-          addItem({
-            id: shortid.generate(),
-            name: itemName,
-            description: itemDescription,
-            price: Number(itemPrice),
-          })
-        }
-      >
-        Добавить товар
-      </button>
+      {user === "админ" ? (
+        <>
+          <label>
+            <input
+              type="text"
+              placeholder="название товара"
+              value={itemName}
+              onChange={handleItemNameChange}
+            ></input>
+          </label>
+          <label>
+            <input
+              type="text"
+              placeholder="описание товара"
+              value={itemDescription}
+              onChange={handleItemDescriptionChange}
+            ></input>
+          </label>
+          <label>
+            <input
+              type="number"
+              placeholder="цена"
+              value={itemPrice}
+              onChange={handlesetItemPriceChange}
+            ></input>
+          </label>
+          <button
+            type="submit"
+            onClick={() =>
+              addItem({
+                id: shortid.generate(),
+                name: itemName,
+                description: itemDescription,
+                price: Number(itemPrice),
+                quantity: 1,
+                description:
+                  "Экран 15.6 (1920x1080) Full HD, матовый / AMD Dual-Core A4-9125 (2.3 - 2.6 ГГц) / RAM 4 ГБ / SSD 128 ГБ / AMD Radeon R3 Graphics / DVD+/-RW / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / 2.1 кг / черный",
+              })
+            }
+          >
+            Добавить товар
+          </button>
+        </>
+      ) : (
+        <h1>У вас недостаточно прав доступа для добавления товаров</h1>
+      )}
     </form>
   );
 }

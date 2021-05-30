@@ -4,3 +4,7 @@ export const getItems = (state) => {
 export const getFilteredItems = (state) => {
   return state.filteredItems;
 };
+
+export const getUser = (state) => {
+  return state.user;
+};

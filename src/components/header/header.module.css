@@ -1,19 +1,33 @@
 .headerSection {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
+  /* justify-content: space-between; */
 }
 .logo {
   width: 64px;
   height: 50px;
+  margin-right: 50px;
 }
-.pageLink {
-  margin-right: 20px;
-  padding: 5px;
+
+.pageLinkItem {
+  /* margin-right: 20px; */
+  width: 100%;
+  padding: 20px;
   color: black;
 }
-.pageLink:hover,
-.pageLink:focus {
-  background-color: #7b68ee;
+.pageLinkItem:hover,
+.pageLinkItem:focus {
+  background-color: #4682b4;
   border-radius: 10px;
   color: aliceblue;
+  font-size: 24px;
+}
+.pageLink {
+  color: black;
+}
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
 }

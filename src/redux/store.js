@@ -7,9 +7,7 @@ import { createReducer } from "@reduxjs/toolkit";
 const itemsReducer = (state = db, action) => {
   return state;
 };
-// const filteredReducer = (state = db, action) => {
-//   return state;
-// };
+
 const filteredReducer = createReducer(db, {
   [actions.getItemsSuccess]: (state, action) => {
     return state;
@@ -28,9 +26,16 @@ const filteredReducer = createReducer(db, {
   },
 });
 
+const userReduser = createReducer("", {
+  [actions.setUserSuccess]: (_state, action) => {
+    return action.payload;
+  },
+});
+
 const rootReducer = combineReducers({
   items: itemsReducer,
   filteredItems: filteredReducer,
+  user: userReduser,
 });
 
 const store = configureStore({

@@ -16,6 +16,10 @@ const deleteAllItemRequest = createAction("deleteAllItemRequest");
 const deleteAllItemSuccess = createAction("deleteAllItemSuccess");
 const deleteAllItemError = createAction("deleteAllItemError");
 
+const setUserRequest = createAction("setUserRequest");
+const setUserSuccess = createAction("setUserSuccess");
+const setUserError = createAction("setUserError");
+
 export default {
   addItemRequest,
   addItemSuccess,
@@ -29,4 +33,7 @@ export default {
   deleteAllItemRequest,
   deleteAllItemSuccess,
   deleteAllItemError,
+  setUserRequest,
+  setUserSuccess,
+  setUserError,
 };
