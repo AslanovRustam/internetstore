@@ -21,9 +21,6 @@ const filteredReducer = createReducer(db, {
   [actions.deleteAllItemSuccess]: (state, action) => {
     return [];
   },
-  [actions.addItemSuccess]: (state, action) => {
-    return [action.payload, ...state];
-  },
 });
 
 const userReduser = createReducer("", {

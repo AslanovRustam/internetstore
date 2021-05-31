@@ -48,12 +48,6 @@ export default function AddItem() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log(
-      `itemName: ${itemName},`,
-      `itemDescription: ${itemDescription},`,
-      `itemPrice: ${itemPrice},`
-    );
     resetForm();
   };
 
